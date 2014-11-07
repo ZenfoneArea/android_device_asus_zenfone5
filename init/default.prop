@@ -1,0 +1,18 @@
+#
+# ADDITIONAL_DEFAULT_PROPERTIES
+#
+wifi.version.driver=5.90.195.89.32
+gps.version.driver=6.19.6.198372
+bt.version.driver=V18.23.38.1.0
+persist.tcs.config_name=XMM6360_CONF_FLASHLESS
+ro.sf.lcd_density=320
+panel.physicalWidthmm=54
+panel.physicalHeightmm=95
+ro.opengles.version=131072
+gsm.net.interface=rmnet0
+persist.system.at-proxy.mode=0
+ro.secure=1
+ro.adb.secure=1
+ro.allow.mock.location=0
+ro.debuggable=0
+persist.sys.usb.config=mtp

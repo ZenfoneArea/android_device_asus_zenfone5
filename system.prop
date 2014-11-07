@@ -1,0 +1,32 @@
+#
+# system.prop for revolution
+#
+persist.tel.hot_swap.support=true
+drm.service.enabled=true
+persist.sys.strictmode.disable=true
+ro.ril.status.polling.enable=0
+ro.config.personality=compat_layout
+ro.opengles.version=131072
+ro.sf.lcd_density=240
+panel.physicalWidthmm=62
+panel.physicalHeightmm=110
+ro.mds.enable=true
+dalvik.vm.houdini=on
+
+#Force GPU Rendering on 2d Operations                                                         
+debug.sf.hw=1                                                                                 
+debug.egl.profiler=1                                                                          
+debug.egl.hw=1                                                                                
+persist.sys.ui.hw=1 
+
+ro.com.google.clientidbase=android-google
+gsm.net.interface=rmnet0
+persist.system.at-proxy.mode=0
+ro.secure=0
+ro.allow.mock.location=1
+ro.debuggable=1
+persist.service.adb.root=1
+persist.ril-daemon.disable=0
+persist.radio.ril_modem_state=1
+persist.sys.usb.config=mtp,adb
+

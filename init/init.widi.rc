@@ -1,0 +1,13 @@
+import init.widi.vendor.rc
+
+on post-fs-data
+   mkdir /data/widi 0770 wifi wifi
+   chmod 0660 /system/etc/wifi/widi_supplicant.conf
+   chown wifi wifi /system/etc/wifi/widi_supplicant.conf
+
+service widiservice /system/bin/widi_api_server
+    class main
+    user system
+    group system wifi bluetooth inet net_raw net_admin dhcp
+    ioprio rt 4
+

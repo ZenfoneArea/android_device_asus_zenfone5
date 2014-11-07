@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+**
+** Copyright 2009, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License")
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+
+<device name="Android">
+  <!-- All values are in mW except as noted -->
+  <item name="none">0</item>
+  <item name="screen.on">191.899</item> <!-- power at min brightness  -->
+  <item name="bluetooth.active">9.375</item>
+  <item name="bluetooth.on">1.784</item>
+  <item name="screen.full">239.274</item>
+  <item name="wifi.on">19</item>
+  <item name="wifi.active">120</item>
+  <item name="wifi.scan">30</item>
+  <item name="dsp.audio">22.780</item>
+  <item name="dsp.video">66.032</item>
+ <!-- The current consumed by the radio when in call/data -->
+  <item name="radio.active">153.190</item>
+  <!-- The current consumed by the radio when it is scanning for a signal -->
+  <item name="radio.scanning">115.406</item>
+  <item name="gps.on">47.0</item>
+  <!-- Current consumed by the radio at different signal strengths, when paging -->
+  <array name="radio.on"> <!-- Strength 0 to BINS-1 -->
+      <value>0.911</value>
+  </array>
+  <!-- Different CPU speeds as reported in
+       /sys/devices/system/cpu/cpu0/cpufreq/stats/time_in_state -->
+  <array name="cpu.speeds">
+      <value>800000</value>
+      <value>933000</value>
+      <value>1200000</value>
+      <value>1333000</value>
+      <value>1600000</value>
+  </array>
+  <!-- Power consumption when CPU is idle -->
+  <item name="cpu.idle">0.0612</item>
+  <!-- Power consumption at different speeds -->
+  <array name="cpu.active">
+      <value>484</value>
+      <value>567</value>
+      <value>692</value>
+      <value>838</value>
+      <value>1021</value>
+  </array>
+  <!-- This is the battery capacity in mAh -->
+  <item name="battery.capacity">2000</item>
+</device>
