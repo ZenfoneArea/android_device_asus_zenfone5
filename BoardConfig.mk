@@ -71,8 +71,8 @@ BOARD_CACHE_FILESYSTEM                  := ext4
 BOARD_SYSTEM_DEVICE                     := /dev/block/mmcblk0p9
 BOARD_SYSTEM_FILESYSTEM                 := ext4
 
-TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/kernel
-DEVICE_BASE_BOOT_IMAGE := $(LOCAL_PATH)/boot.img
+TARGET_KERNEL_SOURCE := kernel/device/asus/a500cg
+TARGET_KERNEL_CONFIG := /device/asus/a500cg/a500cg_diffconfig
 
 # skip doc from building
 BOARD_SKIP_ANDROID_DOC_BUILD := true
@@ -150,6 +150,5 @@ TARGET_ARCH_LOWMEM := true
 TARGET_RECOVERY_PIXEL_FORMAT := "BGRA_8888"
 DEVICE_RESOLUTION := 720x1280
 TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/init/recovery.fstab
-TARGET_PREBUILT_RECOVERY_KERNEL := $(LOCAL_PATH)/kernel
 TARGET_RECOVERY_INITRC := $(LOCAL_PATH)/init/recovery.init.redhookbay.rc
 RECOVERY_SDCARD_ON_DATA := true
